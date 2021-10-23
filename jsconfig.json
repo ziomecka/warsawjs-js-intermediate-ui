@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "components": ["./components"],
+      "common": ["./common"],
+      "api": ["./api"],
+      "app": ["./app"],
+      "store": ["./store"],
+      "observer": ["./observer"]
+    }
+  },
+  "exclude": ["node_modules", ".git", "**/*spec.js", "./*js"]
+}

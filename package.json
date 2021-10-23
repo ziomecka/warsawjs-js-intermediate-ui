@@ -1,0 +1,59 @@
+{
+  "name": "warsawjs-js-intermediate-ui",
+  "version": "1.0.0",
+  "description": "WarsawJS training - JS - intermediate - UI",
+  "scripts": {
+    "serve": "webpack serve --config ./webpack.js",
+    "test": "jest",
+    "test:watch": " jest --config ./jest.config.js --watch",
+    "eslint": "eslint webpack/**/* src/**/* static/js/**/* test/**/*",
+    "css:sort": "postcss --no-map --replace src/**/*css"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "modern-normalize": "1.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.15.8",
+    "@babel/eslint-parser": "7.15.8",
+    "@babel/plugin-transform-runtime": "7.15.8",
+    "@babel/preset-env": "7.15.8",
+    "@babel/runtime-corejs2": "7.15.4",
+    "babel-loader": "8.0.5",
+    "css-loader": "6.4.0",
+    "dotenv": "6.2.0",
+    "eslint": "8.0.1",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "html-webpack-plugin": "5.4.0",
+    "jest": "27.3.1",
+    "mini-css-extract-plugin": "2.4.2",
+    "node-notifier": "10.0.0",
+    "postcss": "8.3.11",
+    "postcss-cli": "9.0.1",
+    "postcss-loader": "6.2.0",
+    "postcss-preset-env": "6.7.0",
+    "postcss-sorting": "7.0.1",
+    "prettier": "2.4.1",
+    "style-loader": "3.3.0",
+    "webpack": "5.58.2",
+    "webpack-cli": "4.9.1",
+    "webpack-dev-server": "4.3.1"
+  },
+  "engines": {
+    "node": "14.18.1",
+    "npm": "6.14.15"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ziomecka/warsawjs-js-intermediate-ui.git"
+  },
+  "author": {
+    "name": "Katarzyna Ziomek-Zdanowicz",
+    "email": "katarzyna@zdanowicz.org.pl"
+  },
+  "bugs": {
+    "url": "https://github.com/ziomecka/warsawjs-js-intermediate-ui/issues"
+  },
+  "homepage": "https://github.com/ziomecka/warsawjs-js-intermediate-ui#readme"
+}
