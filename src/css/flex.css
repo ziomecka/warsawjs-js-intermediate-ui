@@ -1,0 +1,33 @@
+.flex-row,
+.flex-column,
+.flex-row-center,
+.flex-column-center,
+.flex-row-space-around {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-column,
+.flex-column-center {
+  flex-direction: column;
+}
+
+.flex-row-center,
+.flex-column-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-row-space-around {
+  justify-content: space-around;
+}
+
+.flex-row-space-around p {
+}
+
+.flex-row-space-around p span:nth-child(1) {
+  font-size: 0.85em;
+  font-weight: 600;
+  color: #888;
+  text-transform: uppercase;
+}

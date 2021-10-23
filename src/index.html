@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>WarsawJs - JS - intermediate</title>
+   </head>
+   <body class="grid grid__container grid__container--outer">
+      <header class="grid  grid__container grid__container--inner grid__header">
+         <h1 class="logo">JS - intermediate</h1>
+      </header>
+      <main id="main" class="grid  grid__container grid__container--inner grid__main channels channels__container"></main>
+      <section class="grid  grid__container grid__container--inner grid__filter filter">
+         <input class="filter__input" type="text" placeholder="filter channels..." id="filter-title">
+      </section>
+      <aside class="grid  grid__container grid__container--inner grid__aside">
+         <section class="radio radio__container--outer">
+            <h3 class="radio radio__header">Sort channels by:</h3>
+            <ul id="radioContainer" class=" radio radio__container--inner">
+               <li class="radio radio__item">
+                  <input class="radio radio__input" name="sort" type="radio" id="sort-title" value="title">
+                  <label class="radio__label" for="sort-title">title</label>
+               </li>
+               <li class="radio radio__item">
+                  <input class="radio radio__input" name="sort" type="radio" id="sort-subscribers" value="statistics.subscriberCount">
+                  <label class="radio__label" for="sort-subscribers">subscribers</label>
+               </li>
+               <li class="radio radio__item">
+                  <input class="radio radio__input" name="sort" type="radio" id="sort-videos" value="statistics.videoCount">
+                  <label class="radio__label" for="sort-videos">videos</label>
+               </li>
+               <li class="radio radio__item">
+                  <input class="radio radio__input" name="sort" type="radio" id="sort-views" value="statistics.viewCount">
+                  <label class="radio__label" for="sort-views">views</label>
+               </li>
+            </ul>
+            <button class="button button--primary" id="clearButton">Clear</button>
+         </section>
+      </aside>
+   </body>
+</html>

@@ -1,0 +1,21 @@
+:root {
+    --logo-background: #f0db4f;
+    --logo-text: 'WarsawJS';
+    --logo-height: 2em;
+    --logo-padding: var(--sm-distance);
+  }
+
+  .logo{
+      padding-left: var(--logo-padding);
+  }
+.logo:before {
+    position: absolute;
+    top: -2em;
+    left: 0;
+    display: inline-flex;
+    content: var(--logo-text);
+    align-items: center;
+    height: var(--logo-height);
+    padding: var(--logo-padding);
+    background-color: var(--logo-background);
+}

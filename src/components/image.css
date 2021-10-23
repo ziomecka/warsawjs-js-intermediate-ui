@@ -1,0 +1,11 @@
+.image__heading {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.image--round {
+  border-radius: 50%;
+}
+
+.image img {
+}

@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "WarsawJS training - JS - intermediate - UI",
   "scripts": {
-    "serve": "webpack serve --config ./webpack.js",
+    "start": "webpack serve --config ./webpack.js",
     "test": "jest",
     "test:watch": " jest --config ./jest.config.js --watch",
-    "eslint": "eslint webpack/**/* src/**/* static/js/**/* test/**/*",
+    "lint": "eslint webpack/**/* src/**/* static/js/**/* test/**/*",
     "css:sort": "postcss --no-map --replace src/**/*css"
   },
   "license": "ISC",
