@@ -1,7 +1,6 @@
 .filter {
   background: var(--background);
 }
-
 .filter__input {
   height: 40px;
   width: 100%;

@@ -1,11 +1,16 @@
 .image__heading {
   margin: 0;
-  font-size: 1.2em;
+    font-size: 1.2em;
 }
 
 .image--round {
   border-radius: 50%;
+
 }
 
 .image img {
+  height: auto;
+  max-width: 120px;
 }
+
+

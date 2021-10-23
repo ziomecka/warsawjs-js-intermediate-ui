@@ -1,9 +1,20 @@
+import { dom } from 'common';
+import { store } from 'store';
+
 class Clear {
   selector = '#clearButton';
 
-  init = () => {};
+  init = () =>
+    dom.add({
+      event: 'click',
+      listener: this.listener,
+      selector: this.selector,
+    });
 
-  listener = () => {};
+  listener = () => {
+    store.setState('sortBy', null);
+    store.setState('filterText', null);
+  };
 }
 
 export const clear = new Clear();

@@ -1,11 +1,36 @@
+import { dom } from 'common';
+import { store } from 'store';
+
 class Filter {
   selector = '#filter-title';
 
-  init = () => {};
+  init = () => {
+    store.subscribe('filter', this.clear);
 
-  listener = () => {};
+    return dom.add({
+      event: 'input',
+      listener: ({ target: { value } }) => this.listener(value),
+      selector: this.selector,
+    });
+  };
 
-  clear = () => {};
+  listener = (value) => {
+    store.setState('filter', { 'snippet.title': value });
+  };
+
+  clear = (filter) => {
+    if (filter) {
+      return;
+    }
+
+    const input = this.container;
+
+    if (!input || !input.value) {
+      return;
+    }
+
+    input.value = '';
+  };
 
   get container() {
     return document.querySelector(this.selector);
